@@ -181,13 +181,13 @@
   var btnJa = document.getElementById('btn-ja');
   var btnEn = document.getElementById('btn-en');
   btnJa.addEventListener('click', function () {
-    ja.style.display = '';
+    ja.style.display = 'block';
     en.style.display = 'none';
     btnJa.classList.add('active');
     btnEn.classList.remove('active');
   });
   btnEn.addEventListener('click', function () {
-    en.style.display = '';
+    en.style.display = 'block';
     ja.style.display = 'none';
     btnEn.classList.add('active');
     btnJa.classList.remove('active');
