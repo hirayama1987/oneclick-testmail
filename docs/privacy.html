@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>プライバシーポリシー | ワンクリック捨てアド</title>
+<style>
+  :root {
+    --indigo: #4f46e5;
+    --text: #111827;
+    --muted: #4b5563;
+    --border: #e5e7eb;
+    --bg: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 40px 20px 80px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans",
+      "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+    line-height: 1.8;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 22px;
+    margin-bottom: 4px;
+  }
+  .updated {
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 32px;
+  }
+  h2 {
+    font-size: 16px;
+    margin-top: 32px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--border);
+  }
+  p, li {
+    font-size: 14px;
+    color: var(--text);
+  }
+  ul {
+    padding-left: 20px;
+  }
+  a {
+    color: var(--indigo);
+  }
+  .lang-switch {
+    margin-bottom: 24px;
+    font-size: 13px;
+  }
+  .lang-switch button {
+    border: 1px solid var(--border);
+    background: #fff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    margin-right: 6px;
+  }
+  .lang-switch button.active {
+    background: var(--indigo);
+    color: #fff;
+    border-color: var(--indigo);
+  }
+  [data-lang="en"] { display: none; }
+</style>
+</head>
+<body>
+<main>
+  <div class="lang-switch">
+    <button id="btn-ja" class="active">日本語</button>
+    <button id="btn-en">English</button>
+  </div>
+
+  <div data-lang="ja">
+    <h1>プライバシーポリシー</h1>
+    <p class="updated">最終更新日: 2026年9月15日</p>
+
+    <p>
+      「ワンクリック捨てアド」（以下「本拡張機能」）は、会員登録用の使い捨てメールアドレスを
+      ワンクリックで生成し、クリップボードにコピーする Chrome 拡張機能です。
+      本ポリシーは、本拡張機能が扱う情報について説明します。
+    </p>
+
+    <h2>収集する情報</h2>
+    <ul>
+      <li>ユーザーが設定画面で入力する、ご自身のメールアドレス（エイリアス生成のベースとして使用）</li>
+      <li>本拡張機能が生成したメールアドレスの履歴と生成日時（直近20件まで）</li>
+    </ul>
+    <p>
+      これら以外の情報（閲覧履歴、個人を特定する追加情報、位置情報など）は一切収集しません。
+    </p>
+
+    <h2>情報の保存方法</h2>
+    <p>
+      入力されたメールアドレスおよび履歴は、Chrome の
+      <code>chrome.storage</code> API を用いて、お使いの Chrome プロファイル内にのみ保存されます。
+      開発者を含む第三者が運営するサーバーへ送信されることはありません。
+      メールアドレスは <code>chrome.storage.sync</code> に保存されるため、
+      同じ Google アカウントでログインした他の Chrome 端末間で同期される場合がありますが、
+      これは Google Chrome 自体の同期機能によるものであり、本拡張機能の開発者がアクセスすることはできません。
+    </p>
+
+    <h2>第三者への提供</h2>
+    <p>本拡張機能は外部サーバーへの通信を一切行わず、収集した情報を第三者と共有・販売することもありません。</p>
+
+    <h2>権限について</h2>
+    <p>
+      本拡張機能が要求する権限は <code>storage</code> のみです。
+      これは上記のメールアドレスおよび履歴をローカルに保存するために使用されます。
+    </p>
+
+    <h2>データの削除</h2>
+    <p>
+      拡張機能のポップアップ内「クリア」ボタンで履歴を削除できます。
+      すべてのデータは、拡張機能をアンインストールすると同時に削除されます。
+    </p>
+
+    <h2>お問い合わせ</h2>
+    <p>本ポリシーに関するご質問は、以下までご連絡ください。</p>
+    <p><a href="mailto:naoki.hirayama1987@gmail.com">naoki.hirayama1987@gmail.com</a></p>
+  </div>
+
+  <div data-lang="en">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: September 15, 2026</p>
+
+    <p>
+      "One-Click Burner Email" (the "Extension") generates a disposable sign-up
+      email address and copies it to your clipboard in one click. This policy
+      explains what information the Extension handles.
+    </p>
+
+    <h2>Information We Collect</h2>
+    <ul>
+      <li>The email address you enter as the base address for generating aliases</li>
+      <li>A history of addresses the Extension has generated, with timestamps (last 20 entries)</li>
+    </ul>
+    <p>No other information — such as browsing history, additional personal identifiers, or location data — is collected.</p>
+
+    <h2>How Information Is Stored</h2>
+    <p>
+      Your base email address and history are stored only within your Chrome
+      profile using the <code>chrome.storage</code> API. Nothing is sent to any
+      server operated by the developer or any third party. The base email address
+      is stored using <code>chrome.storage.sync</code>, so it may sync across
+      Chrome instances signed into the same Google account &mdash; this is a
+      feature of Chrome itself, and the developer has no access to this data.
+    </p>
+
+    <h2>Third-Party Sharing</h2>
+    <p>The Extension does not communicate with any external server and does not share or sell collected information to third parties.</p>
+
+    <h2>Permissions</h2>
+    <p>
+      The Extension requests only the <code>storage</code> permission, which is
+      used to save the email address and history described above, locally.
+    </p>
+
+    <h2>Data Deletion</h2>
+    <p>
+      You can clear the history at any time using the "Clear" button in the
+      popup. All data is removed when you uninstall the Extension.
+    </p>
+
+    <h2>Contact</h2>
+    <p>If you have questions about this policy, please contact:</p>
+    <p><a href="mailto:naoki.hirayama1987@gmail.com">naoki.hirayama1987@gmail.com</a></p>
+  </div>
+</main>
+<script>
+  var ja = document.querySelector('[data-lang="ja"]');
+  var en = document.querySelector('[data-lang="en"]');
+  var btnJa = document.getElementById('btn-ja');
+  var btnEn = document.getElementById('btn-en');
+  btnJa.addEventListener('click', function () {
+    ja.style.display = '';
+    en.style.display = 'none';
+    btnJa.classList.add('active');
+    btnEn.classList.remove('active');
+  });
+  btnEn.addEventListener('click', function () {
+    en.style.display = '';
+    ja.style.display = 'none';
+    btnEn.classList.add('active');
+    btnJa.classList.remove('active');
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title data-i18n="popupTitle">ワンクリック捨てアド</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header class="header">
+    <span class="header-icon">✉️</span>
+    <h1 data-i18n="popupTitle">ワンクリック捨てアド</h1>
+  </header>
+
+  <!-- 初回セットアップ画面 -->
+  <section id="setup-view" class="view hidden">
+    <p class="setup-desc">
+      <span data-i18n="setupDescIntro">ベースにする自分のメールアドレスを登録してください。</span><br />
+      <span data-i18n="setupDescNote">生成されるアドレス宛のメールは、すべてこの受信箱に届きます。</span>
+    </p>
+    <input
+      id="setup-email"
+      type="email"
+      data-i18n-placeholder="setupEmailPlaceholder"
+      placeholder="you@example.com"
+      autocomplete="off"
+      spellcheck="false"
+    />
+    <p id="setup-error" class="error hidden"></p>
+    <button id="setup-save" class="primary-btn" data-i18n="setupSaveButton">保存してはじめる</button>
+  </section>
+
+  <!-- メイン画面 -->
+  <section id="main-view" class="view hidden">
+    <div class="address-row">
+      <input id="address-field" type="text" readonly spellcheck="false" />
+      <button id="copy-btn" class="icon-btn" data-i18n-title="copyButtonTitle" title="コピー">📋</button>
+    </div>
+    <p id="toast" class="toast hidden"></p>
+
+    <div class="actions">
+      <button id="regenerate-btn" class="primary-btn" data-i18n="regenerateButton">🔄 新しく生成してコピー</button>
+    </div>
+
+    <div class="history-section">
+      <div class="history-header">
+        <h2 data-i18n="historyHeading">履歴</h2>
+        <button id="clear-history-btn" class="text-btn" data-i18n="clearHistoryButton">クリア</button>
+      </div>
+      <ul id="history-list" class="history-list"></ul>
+      <p id="history-empty" class="history-empty hidden" data-i18n="historyEmpty">まだ履歴はありません</p>
+    </div>
+
+    <footer class="footer">
+      <span id="base-email-display" class="base-email"></span>
+      <button id="edit-base-email-btn" class="text-btn" data-i18n="editBaseEmailButton">変更</button>
+    </footer>
+  </section>
+
+  <script src="popup.js"></script>
+</body>
+</html>

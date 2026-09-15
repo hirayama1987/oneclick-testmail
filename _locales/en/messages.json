@@ -1,0 +1,59 @@
+{
+  "extName": {
+    "message": "One-Click Burner Email"
+  },
+  "extDescription": {
+    "message": "Generate a disposable sign-up email address and copy it to your clipboard in one click."
+  },
+  "actionTitle": {
+    "message": "Generate & copy a burner address"
+  },
+  "popupTitle": {
+    "message": "One-Click Burner Email"
+  },
+  "setupDescIntro": {
+    "message": "Register the email address you want to use as your base."
+  },
+  "setupDescNote": {
+    "message": "All mail sent to generated addresses will land in this inbox."
+  },
+  "setupEmailPlaceholder": {
+    "message": "you@example.com"
+  },
+  "setupSaveButton": {
+    "message": "Save & get started"
+  },
+  "setupErrorInvalidEmail": {
+    "message": "Please enter a valid email address"
+  },
+  "copyButtonTitle": {
+    "message": "Copy"
+  },
+  "toastCopied": {
+    "message": "Copied to clipboard"
+  },
+  "toastCopyFailed": {
+    "message": "Failed to copy"
+  },
+  "toastCopyFailedManual": {
+    "message": "Failed to copy. Please copy it manually."
+  },
+  "regenerateButton": {
+    "message": "🔄 Generate new & copy"
+  },
+  "historyHeading": {
+    "message": "History"
+  },
+  "clearHistoryButton": {
+    "message": "Clear"
+  },
+  "historyEmpty": {
+    "message": "No history yet"
+  },
+  "historyItemTitle": {
+    "message": "Click to copy"
+  },
+  "editBaseEmailButton": {
+    "message": "Edit"
+  }
+}

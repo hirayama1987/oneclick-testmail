@@ -1,0 +1,254 @@
+:root {
+  --indigo-600: #4f46e5;
+  --indigo-700: #4338ca;
+  --indigo-50: #eef2ff;
+  --gray-900: #111827;
+  --gray-600: #4b5563;
+  --gray-400: #9ca3af;
+  --gray-200: #e5e7eb;
+  --gray-100: #f3f4f6;
+  --red-600: #dc2626;
+  --green-600: #16a34a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 340px;
+  margin: 0;
+  padding: 14px 16px 16px;
+  background: #ffffff;
+  color: var(--gray-900);
+  font-size: 13px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.header-icon {
+  font-size: 18px;
+}
+
+.header h1 {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.view.hidden {
+  display: none;
+}
+
+/* setup view */
+.setup-desc {
+  color: var(--gray-600);
+  line-height: 1.6;
+  margin: 0 0 10px;
+}
+
+#setup-email {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--gray-200);
+  border-radius: 8px;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+#setup-email:focus {
+  outline: none;
+  border-color: var(--indigo-600);
+}
+
+.error {
+  color: var(--red-600);
+  margin: 0 0 8px;
+}
+
+.error.hidden {
+  display: none;
+}
+
+.primary-btn {
+  width: 100%;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  background: var(--indigo-600);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.primary-btn:hover {
+  background: var(--indigo-700);
+}
+
+.primary-btn:active {
+  transform: translateY(1px);
+}
+
+/* main view */
+.address-row {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+#address-field {
+  flex: 1;
+  min-width: 0;
+  padding: 9px 10px;
+  border: 1px solid var(--gray-200);
+  border-radius: 8px;
+  font-size: 12.5px;
+  background: var(--gray-100);
+  color: var(--gray-900);
+}
+
+.icon-btn {
+  width: 36px;
+  border: 1px solid var(--gray-200);
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.icon-btn:hover {
+  background: var(--indigo-50);
+  border-color: var(--indigo-600);
+}
+
+.toast {
+  color: var(--green-600);
+  font-size: 12px;
+  margin: 2px 0 10px;
+  min-height: 14px;
+}
+
+.toast.hidden {
+  visibility: hidden;
+}
+
+.actions {
+  margin-bottom: 10px;
+}
+
+.history-section {
+  border-top: 1px solid var(--gray-200);
+  padding-top: 10px;
+}
+
+.history-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.history-header h2 {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--gray-600);
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.text-btn {
+  background: none;
+  border: none;
+  color: var(--indigo-600);
+  font-size: 12px;
+  cursor: pointer;
+  padding: 2px 4px;
+}
+
+.text-btn:hover {
+  text-decoration: underline;
+}
+
+.history-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 160px;
+  overflow-y: auto;
+}
+
+.history-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 4px;
+  border-radius: 6px;
+}
+
+.history-item:hover {
+  background: var(--gray-100);
+}
+
+.history-item-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.history-item-address {
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.history-item-meta {
+  font-size: 10.5px;
+  color: var(--gray-400);
+}
+
+.history-copy-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 4px;
+  flex-shrink: 0;
+}
+
+.history-empty {
+  color: var(--gray-400);
+  font-size: 12px;
+  text-align: center;
+  padding: 8px 0;
+}
+
+.history-empty.hidden {
+  display: none;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid var(--gray-200);
+  color: var(--gray-400);
+  font-size: 11px;
+}
+
+.base-email {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

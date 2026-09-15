@@ -1,0 +1,59 @@
+{
+  "extName": {
+    "message": "ワンクリック捨てアド"
+  },
+  "extDescription": {
+    "message": "クリック一つで会員登録用の使い捨てメールアドレスを生成し、クリップボードにコピーします。"
+  },
+  "actionTitle": {
+    "message": "捨てアドを生成してコピー"
+  },
+  "popupTitle": {
+    "message": "ワンクリック捨てアド"
+  },
+  "setupDescIntro": {
+    "message": "ベースにする自分のメールアドレスを登録してください。"
+  },
+  "setupDescNote": {
+    "message": "生成されるアドレス宛のメールは、すべてこの受信箱に届きます。"
+  },
+  "setupEmailPlaceholder": {
+    "message": "you@example.com"
+  },
+  "setupSaveButton": {
+    "message": "保存してはじめる"
+  },
+  "setupErrorInvalidEmail": {
+    "message": "有効なメールアドレスを入力してください"
+  },
+  "copyButtonTitle": {
+    "message": "コピー"
+  },
+  "toastCopied": {
+    "message": "コピーしました"
+  },
+  "toastCopyFailed": {
+    "message": "コピーに失敗しました"
+  },
+  "toastCopyFailedManual": {
+    "message": "コピーに失敗しました。手動でコピーしてください"
+  },
+  "regenerateButton": {
+    "message": "🔄 新しく生成してコピー"
+  },
+  "historyHeading": {
+    "message": "履歴"
+  },
+  "clearHistoryButton": {
+    "message": "クリア"
+  },
+  "historyEmpty": {
+    "message": "まだ履歴はありません"
+  },
+  "historyItemTitle": {
+    "message": "クリックでコピー"
+  },
+  "editBaseEmailButton": {
+    "message": "変更"
+  }
+}
