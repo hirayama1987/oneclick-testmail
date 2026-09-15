@@ -74,22 +74,13 @@ Developer Dashboard の「権限の正当化」欄には以下を入力してく
 - 「ユーザーデータを収集していますか？」→ **はい**
 - 収集するデータの種類 → **個人を特定できる情報（メールアドレス）**
 - 用途 → アプリの機能を実現するため（エイリアス生成のベースとして使用）。第三者への販売・共有なし、広告目的での使用なし
-- プライバシーポリシー URL → `https://<GitHubユーザー名>.github.io/oneclick-testmail/privacy.html`
-  （`docs/privacy.html` を GitHub Pages で公開した URL。下記「GitHub Pages 公開手順」参照）
+- プライバシーポリシー URL → `https://hirayama1987.github.io/oneclick-testmail/privacy.html`（公開済み）
 
 ## スクリーンショット
 
 - 必須: 1280x800 または 640x400 の PNG/JPG（アルファチャンネルなし）を1〜5枚
 - 用意できていない場合は、実際にポップアップを開いた状態を Cmd+Shift+4 でスクリーンショットし、教えてください。1280x800 のキャンバスに収まるよう余白を足す加工はこちらで行えます。
 
-## GitHub Pages 公開手順（プライバシーポリシー用）
+## GitHub Pages（プライバシーポリシー）
 
-1. GitHub 上に空のリポジトリを作成する（例: `oneclick-testmail`、Public 推奨）
-2. このプロジェクトのリモートを設定してプッシュ
-   ```
-   git remote add origin https://github.com/<GitHubユーザー名>/oneclick-testmail.git
-   git branch -M main
-   git push -u origin main
-   ```
-3. GitHub の Settings → Pages で、Source を「Deploy from a branch」、Branch を `main` / `docs` に設定
-4. 数分後に `https://<GitHubユーザー名>.github.io/oneclick-testmail/privacy.html` でアクセスできるようになる
+公開済み: https://hirayama1987.github.io/oneclick-testmail/privacy.html
